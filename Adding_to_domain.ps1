@@ -1,9 +1,9 @@
 ﻿# Define the variables
-$domain = "rushordertees.local" # Replace with your domain name
+$domain = "REDACTED.local" # Replace with your domain name
 #$ouPath = "OU=Computers,DC=yourdomain,DC=local" # Replace with the Organizational Unit (OU) path where you want to place the computer
 $computerName = $env:COMPUTERNAME
-$domainUsername = "rushordertees\mokin" # Replace with a domain admin username
-$domainPassword = "Lenovo321##" # Replace with the password of the domain admin
+$domainUsername = "REDACTED\REDACTED" # Replace with a domain admin username
+$domainPassword = "REDACTED" # Replace with the password of the domain admin
 
 # Create a secure password object
 $securePassword = ConvertTo-SecureString $domainPassword -AsPlainText -Force
@@ -16,3 +16,4 @@ Add-Computer -DomainName $domain -Credential $credential -Restart  #-OUPath $ouP
 
 # If you want to specify a new computer name, you can use the -NewName parameter
 # Add-Computer -DomainName $domain -OUPath $ouPath -Credential $credential -NewName "NewComputerName" -Restart
+
