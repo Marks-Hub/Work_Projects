@@ -1,4 +1,5 @@
-﻿Import-CSV "C:\Users\USERNAME\Documents\AD employees\Extra People AD.csv" | ForEach-Object {
+#This script adds users to Active Directory
+ Import-CSV "C:\Users\USERNAME\Documents\AD employees\Extra People AD.csv" | ForEach-Object {
     $firstName = $_.FirstName
     $lastName = $_.LastName
     $fullName = "$firstName $lastName"
@@ -17,4 +18,5 @@
                -ChangePasswordAtLogon $true `
                -PassThru
 }
+
 
