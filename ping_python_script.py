@@ -4,13 +4,14 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import ssl
 
+#This script pings a list of IP addresses and sends the results in an email
 # Dictionary mapping IP addresses to their descriptions
 ip_addresses = {
-    "208.223.214.34": "Printfly Primary",
-    "50.206.246.28": "Printfly Backup",
-    "187.249.0.114": "Mach6 Primary",
-    "201.163.134.170": "Mach6 Backup",
-    "63.127.184.46": "Caroline Rd"
+    "208.223.214.34": "REDACTED",
+    "50.206.246.28": "REDACTED",
+    "187.249.0.114": "REDACTED",
+    "201.163.134.170": "REDACTED",
+    "63.127.184.46": "REDACTED"
 }
 
 results = ""
@@ -24,8 +25,8 @@ for ip, description in ip_addresses.items():
         results += f"Failed to ping {description} ({ip}): {e}\n"
 
 # Email setup
-sender_email = "it@rushordertees.com"
-recipient_email = "it@rushordertees.com"
+sender_email = "REDACTED"
+recipient_email = "REDACTED"
 smtp_server = "smtp-relay.gmail.com"
 smtp_port = 465  # SSL port
 
@@ -46,3 +47,4 @@ try:
     print("Email sent successfully!")
 except Exception as e:
     print(f"Failed to send email: {e}")
+
