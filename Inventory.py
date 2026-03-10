@@ -11,7 +11,7 @@ import psutil
 import math
 import shutil
 
-
+#This script inventories a windows PC, getting the necessesary inormation and submitting it to a google form.
 # Device Information
 username = os.getlogin()
 computerName = socket.gethostname()
@@ -59,7 +59,7 @@ def fill_google_form():
         driver = webdriver.Chrome()  # Add executable_path if needed
         driver.maximize_window()
 
-        url = "https://docs.google.com/forms/d/e/1FAIpQLSdF9rWkrnl58lhkT1f3I45UE2I_-bdqyPFEXOzrf5TO972R1g/viewform"
+        url = "REDACTED_LINK"
         driver.get(url)
         time.sleep(2)
 
@@ -114,4 +114,5 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     get_cpu_info()
+
 '''
