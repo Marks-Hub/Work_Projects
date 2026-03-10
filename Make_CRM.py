@@ -12,6 +12,7 @@ import csv
 
 from cryptography.fernet import Fernet
 
+#This script Creates a new user in our in house CRM website based on a CSV file.
 # Load the encryption key
 with open('secret.key', 'rb') as key_file:
     key = key_file.read()
@@ -37,7 +38,7 @@ def submit():
     driver = webdriver.Chrome()
     driver.maximize_window()
     # Step 2: Navigate to the website (substitute order ID dynamically)
-    url = f'https://crm2.legacy.printfly.com/employee/create'
+    url = f'REDACTED'
     driver.get(url)
     driver.implicitly_wait(5)
     # Step 3: Locate the username and password fields using the `name` attribute
@@ -58,7 +59,7 @@ def submit():
     time.sleep(10)
     #proccessing the CSV file and placing their values in the appropriate lists
     try:
-        with open('Slack Profiles (Responses) - Form Responses 1.csv', 'r') as file:
+        with open('REDACTED.csv', 'r') as file:
             reader = csv.DictReader(file)
             for row in reader:
                 first_name.append(row['First Name'])
@@ -142,3 +143,4 @@ def submit():
         driver.quit()
 
 submit()        
+
