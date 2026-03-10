@@ -3,7 +3,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import ssl
-
+# This Script pings a list of IP addresses and sends an email if something doesn't ping properly.
 # Dictionary mapping IP addresses to their descriptions
 ip_addresses = {
     "208.223.214.34": "Printfly Primary Internet",
@@ -61,8 +61,8 @@ for ip, description in ip_addresses.items():
 # Only send email if there are failures
 if failed_results:
     # Email setup
-    sender_email = "it@rushordertees.com"
-    recipient_email = "it@rushordertees.com"
+    sender_email = "REDACTED"
+    recipient_email = "REDACTED"
     smtp_server = "smtp-relay.gmail.com"
     smtp_port = 465  # SSL port
 
@@ -85,3 +85,4 @@ if failed_results:
         print(f"Failed to send email: {e}")
 else:
     print("All pings were successful. No email sent.")
+
