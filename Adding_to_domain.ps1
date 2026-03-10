@@ -1,4 +1,5 @@
-﻿# Define the variables
+@This script adds windows devices to Domain
+ # Define the variables
 $domain = "REDACTED.local" # Replace with your domain name
 #$ouPath = "OU=Computers,DC=yourdomain,DC=local" # Replace with the Organizational Unit (OU) path where you want to place the computer
 $computerName = $env:COMPUTERNAME
@@ -16,4 +17,5 @@ Add-Computer -DomainName $domain -Credential $credential -Restart  #-OUPath $ouP
 
 # If you want to specify a new computer name, you can use the -NewName parameter
 # Add-Computer -DomainName $domain -OUPath $ouPath -Credential $credential -NewName "NewComputerName" -Restart
+
 
