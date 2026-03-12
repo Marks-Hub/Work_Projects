@@ -25,7 +25,7 @@ PASSWORD = cipher.decrypt(password).decode()
 print("Decrypted credentials securely loaded.")
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 driver.maximize_window()
-url = f'https://app.periscopedata.com/app/rush-order-tees/1226565/Ninja-Transfers-Shipping'
+url = f'REDACTED'
 driver.get(url)
 
 def run_script():
@@ -83,3 +83,4 @@ def run_script():
 while True:
     run_script()
     # Wait until the next day
+
