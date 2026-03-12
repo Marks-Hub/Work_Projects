@@ -7,7 +7,7 @@ import ssl
 # Dictionary mapping IP addresses to their descriptions
 ip_addresses = {
     "REDACTED": "REDACTED",
-    "50.206.246.28": "REDACTED",
+    "REDACTED": "REDACTED",
     "REDACTED": "REDACTED",
     "REDACTED": "REDACTED",
     "REDACTED": "REDACTED",
@@ -85,5 +85,6 @@ if failed_results:
         print(f"Failed to send email: {e}")
 else:
     print("All pings were successful. No email sent.")
+
 
 
