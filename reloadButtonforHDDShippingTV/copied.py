@@ -35,7 +35,7 @@ def run_script():
         driver.maximize_window()
 
         # Step 2: Navigate to the website (substitute order ID dynamically)
-        url = f'https://app.periscopedata.com/app/rush-order-tees/1226565/Ninja-Transfers-Shipping'
+        url = f'REDACTED'
         driver.get(url)
 
         # Step 3: Locate the username and password fields using the `name` attribute
@@ -80,3 +80,4 @@ def run_script():
 while True:
     run_script()
     # Wait until the next day
+
