@@ -33,7 +33,7 @@ def submit():
     driver.maximize_window()
 
    # Step 2: Navigate to the website (substitute order ID dynamically)
-    url = f'https://crm2.legacy.printfly.com/order/{order_id}'
+    url = f'REDACTED/{order_id}'
     driver.get(url)
     driver.implicitly_wait(5)
 
@@ -43,8 +43,8 @@ def submit():
     password_field = driver.find_element('name', 'password')
 
     # Step 4: Enter your username and password
-    username_field.send_keys('e.script')
-    password_field.send_keys('Yokohama49!!')
+    username_field.send_keys('REDACTED')
+    password_field.send_keys('REDACTED')
 
     # Step 5: Submit the form (you can press Enter in the password field or find the submit button)
     password_field.send_keys(Keys.RETURN)
@@ -101,3 +101,4 @@ tk.Button(window, text="Submit", command=submit).pack()
 
 # Start the Tkinter event loop
 window.mainloop()
+
