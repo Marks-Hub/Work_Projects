@@ -7,11 +7,11 @@ import ssl
 #This script pings a list of IP addresses and sends the results in an email
 # Dictionary mapping IP addresses to their descriptions
 ip_addresses = {
-    "208.223.214.34": "REDACTED",
-    "50.206.246.28": "REDACTED",
-    "187.249.0.114": "REDACTED",
-    "201.163.134.170": "REDACTED",
-    "63.127.184.46": "REDACTED"
+    "REDACTED": "REDACTED",
+    "REDACTED": "REDACTED",
+    "REDACTED": "REDACTED",
+    "REDACTED": "REDACTED",
+    "REDACTED": "REDACTED"
 }
 
 results = ""
@@ -47,4 +47,5 @@ try:
     print("Email sent successfully!")
 except Exception as e:
     print(f"Failed to send email: {e}")
+
 
