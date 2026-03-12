@@ -11,7 +11,7 @@ driver = webdriver.Chrome()
 driver.maximize_window()
 
 # Step 2: Navigate to the website (substitute order ID dynamically)
-url = f'https://app.periscopedata.com/app/rush-order-tees/1226565/Ninja-Transfers-Shipping'
+url = f'REDACTED'
 driver.get(url)
 #driver.implicitly_wait(5)
 
@@ -20,8 +20,8 @@ username_field = driver.find_element('id', 'email')
 password_field = driver.find_element('id', 'password')
 
 # Step 4: Enter your username and password
-username_field.send_keys('productionfloor@printfly.com')
-password_field.send_keys('Printer1234%')
+username_field.send_keys('REDACTED')
+password_field.send_keys('REDACTED')
 
 # Step 5: Submit the form (you can press Enter in the password field or find the submit button)
 password_field.send_keys(Keys.RETURN)
@@ -55,7 +55,7 @@ try:
             driver.maximize_window()
 
             # Step 2: Navigate to the website (substitute order ID dynamically)
-            url = f'https://app.periscopedata.com/app/rush-order-tees/1226565/Ninja-Transfers-Shipping'
+            url = f'REDACTED'
             driver.get(url)
             #driver.implicitly_wait(5)
 
@@ -64,8 +64,8 @@ try:
             password_field = driver.find_element('id', 'password')
 
             # Step 4: Enter your username and password
-            username_field.send_keys('productionfloor@printfly.com')
-            password_field.send_keys('Printer1234%')
+            username_field.send_keys('REDACTED')
+            password_field.send_keys('REDACTED')
 
             # Step 5: Submit the form (you can press Enter in the password field or find the submit button)
             password_field.send_keys(Keys.RETURN)
@@ -80,4 +80,5 @@ except Exception as e:
 
 
 # Optional: Keep the browser open by not calling driver.quit()
+
 # driver.quit()
