@@ -30,7 +30,7 @@ print("Decrypted credentials securely loaded.")
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 driver.maximize_window()
 # Step 2: Navigate to the website (substitute order ID dynamically)
-url = f'https://app.periscopedata.com/app/rush-order-tees/1226565/Ninja-Transfers-Shipping'
+url = f'REDACTED'
 driver.get(url)
 # Step 3: Locate the username and password fields using the `name` attribute
 username_field = driver.find_element('id', 'email')
@@ -107,3 +107,4 @@ while True:
     new_tab()
     #run_script()
     # Wait until the next day
+
