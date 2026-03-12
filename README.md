@@ -1,0 +1,1 @@
+These are some of the automation projects I made to make my and my coworkewrs life easier. They include powershell scripts for adding devices and users to domain. They also include python scripts using selenium to automate processes on websites.
