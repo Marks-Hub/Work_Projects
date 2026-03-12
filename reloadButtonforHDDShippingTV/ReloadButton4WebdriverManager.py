@@ -36,7 +36,7 @@ def run_script():
         driver.maximize_window()
 
         # Step 2: Navigate to the website (substitute order ID dynamically)
-        url = f'examplewebsite.com'
+        url = f'REDACTED'
         driver.get(url)
 
         # Step 3: Locate the username and password fields using the `name` attribute
@@ -81,3 +81,4 @@ def run_script():
 while True:
     run_script()
     # Wait until the next day
+
