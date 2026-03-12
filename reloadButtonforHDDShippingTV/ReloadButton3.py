@@ -13,7 +13,7 @@ def run_script():
         driver.maximize_window()
 
         # Step 2: Navigate to the website (substitute order ID dynamically)
-        url = f'https://app.periscopedata.com/app/rush-order-tees/1226565/Ninja-Transfers-Shipping'
+        url = f'REDACTED'
         driver.get(url)
 
         # Step 3: Locate the username and password fields using the `name` attribute
@@ -21,8 +21,8 @@ def run_script():
         password_field = driver.find_element('id', 'password')
 
         # Step 4: Enter your username and password
-        username_field.send_keys('productionfloor@printfly.com')
-        password_field.send_keys('Printer1234%')
+        username_field.send_keys('REDACTED')
+        password_field.send_keys('REDACTED')
 
         # Step 5: Submit the form
         password_field.send_keys(Keys.RETURN)
@@ -63,3 +63,4 @@ while True:
     sleep_time = (next_run - now).total_seconds()
     print(f"Sleeping for {int(sleep_time // 3600)} hours and {int((sleep_time % 3600) // 60)} minutes.")
     time.sleep(sleep_time)'''
+
