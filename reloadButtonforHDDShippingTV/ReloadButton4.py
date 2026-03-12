@@ -11,14 +11,14 @@ from selenium.webdriver.support import expected_conditions as EC
 def run_script():
     try:
         # Path to chromedriver
-        service = Service(r"C:\Users\mokin\ChromeDriver\chromedriver-win64\chromedriver-win64\chromedriver.exe")
+        service = Service(r"C:\Users\REDACTED\ChromeDriver\chromedriver-win64\chromedriver-win64\chromedriver.exe")
 
         # Initialize Chrome driver
         driver = webdriver.Chrome(service=service)
         driver.maximize_window()
 
         # Step 2: Navigate to the website (substitute order ID dynamically)
-        url = f'https://app.periscopedata.com/app/rush-order-tees/1226565/Ninja-Transfers-Shipping'
+        url = f'REDACTED'
         driver.get(url)
 
         # Step 3: Locate the username and password fields using the `name` attribute
@@ -26,8 +26,8 @@ def run_script():
         password_field = driver.find_element('id', 'password')
 
         # Step 4: Enter your username and password
-        username_field.send_keys('productionfloor@printfly.com')
-        password_field.send_keys('Printer1234%')
+        username_field.send_keys('REDACTED')
+        password_field.send_keys('REDACTED')
 
         # Step 5: Submit the form
         password_field.send_keys(Keys.RETURN)
@@ -62,3 +62,4 @@ def run_script():
 
 while True:
     run_script()
+
