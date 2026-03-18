@@ -46,7 +46,7 @@
       "typeVersion": 1,
       "credentials": {
         "googleDriveOAuth2Api": {
-          "id": "MRR4LupovhyEEVFE",
+          "id": "REDACTED",
           "name": "Mark"
         }
       }
@@ -71,7 +71,7 @@
       "typeVersion": 3,
       "credentials": {
         "googleDriveOAuth2Api": {
-          "id": "MRR4LupovhyEEVFE",
+          "id": "REDACTED",
           "name": "Mark"
         }
       }
@@ -111,7 +111,7 @@
       "typeVersion": 1,
       "credentials": {
         "pineconeApi": {
-          "id": "B4a7ll8IMHpVBvF0",
+          "id": "REDACTED",
           "name": "PineconeApi account"
         }
       }
@@ -180,7 +180,7 @@
       "typeVersion": 1,
       "credentials": {
         "pineconeApi": {
-          "id": "B4a7ll8IMHpVBvF0",
+          "id": "REDACTED",
           "name": "PineconeApi account"
         }
       }
@@ -213,7 +213,7 @@
       "typeVersion": 1,
       "credentials": {
         "openRouterApi": {
-          "id": "GMXrDy8b0Sh3PTZP",
+          "id": "REDACTED",
           "name": "OpenRouter account"
         }
       }
@@ -242,7 +242,7 @@
       "webhookId": "7ca6a7ba-cd7c-401c-8bad-31b4aa0ec313",
       "credentials": {
         "slackApi": {
-          "id": "xsFQp0m0dMVJd4pp",
+          "id": "REDACTED",
           "name": "Mark slack"
         }
       }
@@ -283,7 +283,7 @@
       "webhookId": "b24da9a9-d60f-41d2-8385-b656fe714bf9",
       "credentials": {
         "slackApi": {
-          "id": "xsFQp0m0dMVJd4pp",
+          "id": "REDACTED",
           "name": "Mark slack"
         }
       }
@@ -303,7 +303,7 @@
       "name": "Embeddings OpenAI",
       "credentials": {
         "openAiApi": {
-          "id": "1LxPYN2xXStHWzx5",
+          "id": "REDACTED",
           "name": "OpenAi account 5"
         }
       }
@@ -323,7 +323,7 @@
       "name": "Embeddings OpenAI1",
       "credentials": {
         "openAiApi": {
-          "id": "1LxPYN2xXStHWzx5",
+          "id": "REDACTED",
           "name": "OpenAi account 5"
         }
       }
